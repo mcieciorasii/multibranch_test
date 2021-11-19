@@ -7,7 +7,7 @@ pipeline {
         stage('PRINT NODE') {
             steps {
                 script {
-                    sh "echo ${env.BRANCH_NAME}"
+                    sh "echo ${params.SOURCE_BRANCH}"
                 }
             }
         } // END OF STAGE PRINT NODE
